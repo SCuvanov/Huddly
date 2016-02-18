@@ -1,0 +1,545 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/createEventFragment"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gray_noise_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/orange"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ivTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/title_banner2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/btnAccept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_navigation_check" />
+
+                <ImageButton
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_navigation_close" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/white_drop_shadow_sharp_background"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                    <HorizontalScrollView
+                        android:id="@+id/horizontalScrollView1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scrollbars="none" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" >
+
+                            <ImageButton
+                                android:id="@+id/btnArchery"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/archery" />
+
+                            <ImageButton
+                                android:id="@+id/btnBadminton"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/badminton" />
+
+                            <ImageButton
+                                android:id="@+id/btnBaseball"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/baseball" />
+
+                            <ImageButton
+                                android:id="@+id/btnBasketball"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/basketball" />
+
+                            <ImageButton
+                                android:id="@+id/btnBoomerang"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/boomerang" />
+
+                            <ImageButton
+                                android:id="@+id/btnBowling"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/bowling" />
+
+                            <ImageButton
+                                android:id="@+id/btnBoxing"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/boxing" />
+
+                            <ImageButton
+                                android:id="@+id/btnCanoeing"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/canoeing" />
+
+                            <ImageButton
+                                android:id="@+id/btnCycling"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/cycling" />
+
+                            <ImageButton
+                                android:id="@+id/btnDarts"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/darts" />
+
+                            <ImageButton
+                                android:id="@+id/btnFishing"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/fishing" />
+
+                            <ImageButton
+                                android:id="@+id/btnFootball"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/football" />
+
+                            <ImageButton
+                                android:id="@+id/btnGolf"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/golf" />
+
+                            <ImageButton
+                                android:id="@+id/btnHiking"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/hiking" />
+
+                            <ImageButton
+                                android:id="@+id/btnHockey"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/hockey" />
+
+                            <ImageButton
+                                android:id="@+id/btnHunting"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/hunting" />
+
+                            <ImageButton
+                                android:id="@+id/btnIceSkating"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/iceskating" />
+
+                            <ImageButton
+                                android:id="@+id/btnKarate"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/karate" />
+
+                            <ImageButton
+                                android:id="@+id/btnPaintball"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/paintball" />
+
+                            <ImageButton
+                                android:id="@+id/btnRockClimbing"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/rockclimbing" />
+
+                            <ImageButton
+                                android:id="@+id/btnRollerSkating"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/rollerskating" />
+
+                            <ImageButton
+                                android:id="@+id/btnRunning"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/running" />
+
+                            <ImageButton
+                                android:id="@+id/btnSkateboarding"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/skateboarding" />
+
+                            <ImageButton
+                                android:id="@+id/btnSkiing"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/skiing" />
+
+                            <ImageButton
+                                android:id="@+id/btnSnowboarding"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/snowboarding" />
+
+                            <ImageButton
+                                android:id="@+id/btnSoccer"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/soccer" />
+
+                            <ImageButton
+                                android:id="@+id/btnSurfing"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/surfing" />
+
+                            <ImageButton
+                                android:id="@+id/btnSwimming"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/swimming" />
+
+                            <ImageButton
+                                android:id="@+id/btnTennis"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/tennis" />
+
+                            <ImageButton
+                                android:id="@+id/btnTugOfWar"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/tugofwar" />
+
+                            <ImageButton
+                                android:id="@+id/btnVolleyball"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/volleyball" />
+
+                            <ImageButton
+                                android:id="@+id/btnWeightLifting"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/weightlifting" />
+
+                            <ImageButton
+                                android:id="@+id/btnYoga"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/yoga" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:id="@+id/textViewSport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Choose Sport"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/gray_79" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/white_drop_shadow_background"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/ivTitle2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_social_chat" />
+
+                        <EditText
+                            android:id="@+id/etTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/apptheme_edit_text_holo_light"
+                            android:ems="10"
+                            android:hint="Title"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@color/gray_35" >
+                        </EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="1sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/gray_215"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/ivDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_social_chat" />
+
+                        <EditText
+                            android:id="@+id/etDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/apptheme_edit_text_holo_light"
+                            android:ems="10"
+                            android:hint="Description"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@color/gray_35" >
+                        </EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="1sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/gray_215"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/ivLocation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_location_place" />
+
+                        <AutoCompleteTextView
+                            android:id="@+id/etLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/apptheme_edit_text_holo_light"
+                            android:ems="10"
+                            android:hint="Location, or press Icon"
+                            android:inputType="textMultiLine"
+                            android:textColor="@color/gray_35" >
+                        </AutoCompleteTextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btnTime"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ui_button_blue"
+                        android:onClick="showTimePickerDialog"
+                        android:text="Time"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btnDate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ui_button_blue"
+                        android:onClick="showDatePickerDialog"
+                        android:text="Date"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="orange">#FF4400</color>
+    <color name="dark_orange">#ef4000</color>
+    <color name="goldenrod">#ffc400</color>
+    <color name="blue">#00bbff</color>
+    <color name="orange_brown">#D43900</color>
+    <color name="brown">#ab2e00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray_215">#d7d4cc</color>
+    <color name="gray_189">#bdbdbd</color>
+    <color name="gray_167">#a7a7a7</color>
+    <color name="gray_79">#4f4f4f</color>
+    <color name="gray_46">#2e2e2e</color>
+    <color name="gray_35">#232323</color>
+    <color name="gray_200">#dbdbdb</color>
+    <color name="dark_transparent">#AA232323</color>
+    <color name="transparent">#00000000</color>
+    <color name="archery_light_blue_icon">#34B5BF</color>
+    <color name="archery_dark_blue_icon">#2EA0A3</color>
+
+</resources>
